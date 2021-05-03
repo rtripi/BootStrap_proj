@@ -1,0 +1,39 @@
+body{
+ font-family: 'Arvo', serif;
+
+}
+
+.height{
+    min-height: 100vh;
+}
+
+.title-underline{
+    width: 10vw;
+    height: 8px;
+    margin: 0 auto;
+}
+
+.height-80{
+    min-height: 80vh;
+}
+
+.about-picture{
+    background: url(../img/about-bcg.jpeg)center/cover no-repeat fixed ;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+#filler, #progress{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/projects-4.jpeg)center/cover no-repeat fixed;
+}
+
+.user__icon{
+    height: 24px ;
+}
+
+.btn-block{
+display: block !important;
+width: 100% !important;
+}

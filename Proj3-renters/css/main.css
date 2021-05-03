@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+
+:root {
+  --mainDark: #242325;
+  --mainGreen: #61e786;
+  --mainWhite: #fff;
+  --mainGrey: #eeeeee;
+}
+
+body {
+  font-family: "Mali", cursive;
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+
+/* Global classes */
+
+.text-green {
+  color: var(--mainGreen);
+}
+
+.text-slant {
+  font-family: "Caveat", cursive;
+}
+
+.green__btn {
+  color: var(--mainGreen);
+  border: 0.1rem solid var(--mainGreen) !important;
+  background-color: transparent;
+}
+
+.green__btn:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+
+.title-underline {
+  width: 12rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.title-underline__center {
+  position: absolute;
+  height: 0.6rem;
+  background: var(--mainGreen);
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+}
+
+.blockquote {
+  border-left: 0.5rem solid var(--mainGreen) !important;
+}
+
+/* navbar */
+
+.navbar {
+  background: var(--mainDark) !important;
+}
+
+.phone-icon {
+  color: var(--mainGreen);
+  border: 0.1rem solid var(--mainGreen);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+/* end of navbar */
+
+/* banner */
+
+.banner-info {
+  min-height: calc(100vh - 101px);
+  background: var(--mainGrey);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-info > h3 {
+  padding-bottom: 1rem;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 108px;
+  left: 0;
+  width: 100%;
+}
+
+.banner-info__footer {
+  background: var(--mainGreen);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.banner-img {
+  min-height: calc(100vh - 101px);
+  background: url(../img/bannerBcg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.banner-img__footer {
+  background: var(--mainDark);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+/* end of banner */
+
+/* About us */
+
+.img-container {
+  position: relative;
+}
+
+.featured-icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.featured-icon-left {
+  background: var(--mainDark);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+
+.featured-icon-right {
+  background: var(--mainGreen);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+
+.btn-book {
+  /* margin-top: 2rem; */
+  align-self: flex-start;
+}
+
+/* end of About us */
+
+/* featured */
+
+.featured {
+  background: var(--mainGrey);
+}
+
+/* end of featured */
+
+/* contact */
+
+.contact {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+
+.contact-btn {
+  background: transparent;
+  border: 0.1rem solid var(--mainWhite);
+  color: var(--mainWhite);
+}
+
+.contact-btn:hover {
+  background: var(--mainWhite);
+  color: var(--mainGreen);
+}
+
+/* end of contact */
+
+/* services */
+.services {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/bannerBcg.jpeg) center/cover fixed no-repeat;
+}
+
+.services-info-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--mainWhite) !important;
+  background: var(--mainGreen);
+  margin-bottom: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.services-info-text:hover {
+  color: var(--mainDark) !important;
+  text-decoration: none;
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: var(--mainGreen);
+  padding: 0.5rem;
+  border: 0.1rem solid var(--mainGreen);
+  margin-right: 1rem;
+  transition: all 0.5s ease-in-out;
+  min-width: 59px;
+  text-align: center;
+}
+
+.service-icon:hover {
+  background: var(--mainGreen);
+  color: var(--mainGrey);
+}
+
+.service-link:hover {
+  color: var(--mainWhite);
+  text-decoration: none;
+}
+/* end ofservices */
